@@ -1,0 +1,58 @@
+.table {
+    width: 100%;
+    border: 1px solid black; 
+    padding: 5px; 
+    border-collapse: collapse; /* CSS2 */
+    background: #FFFFF0;
+}
+
+.table tr:nth-child(even) /* CSS3 */ {
+    background: #F0FFFF;
+}
+
+.table .id {
+    width: 10%;
+} 
+.table .title {
+    width: 20%;
+} 
+.table .subtitle {
+    width: 40%;
+} 
+.table .price {
+    width: 20%;
+} 
+.table .btnEdit {
+    width: 15%;    
+} 
+.table .btnDelete {
+    width: 15%;
+} 
+
+.button-edit {
+    width: 10rem;
+    background: var(--color-secundary);;
+    color: white;
+    justify-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-edit:hover {
+    background: var(--color-secundary-dark);
+}
+
+.button-exclui {
+    width: 10rem;
+    background: var(--color-primary);
+    color: white;
+    justify-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-exclui:hover {
+    background: var(--color-primary-dark);
+}
+
+

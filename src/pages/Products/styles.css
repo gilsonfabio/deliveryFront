@@ -1,0 +1,57 @@
+#page-products-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-products-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.header {
+    width: 100%;
+    border: 1px solid black; 
+    padding: 5px; 
+    border-collapse: collapse; /* CSS2 */
+    background: slategray;
+    color: white;
+}
+
+.header:nth-child(even) /* CSS3 */ {
+    background: #F0FFFF;
+}
+
+.header .id {
+    width: 10%;
+} 
+.header .title {
+    width: 20%;
+} 
+.header .subtitle {
+    width: 40%;
+} 
+.header .price {
+    width: 20%;
+} 
+.header .btnEdit {
+    width: 15%;
+} 
+.header .btnDelete {
+    width: 15%;
+} 
+
+
+
+
+@media (min-width: 700px) {
+    #page-products-list {
+        max-width: 100%;
+    }
+
+    #page-products-list main {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 3.2rem 0;
+    }    
+
+}

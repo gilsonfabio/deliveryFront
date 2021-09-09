@@ -1,0 +1,16 @@
+#page-teacher-form {
+    width: 100vw;
+    height: 100vh;    
+}
+
+@media (min-width: 700px) {
+    #page-teacher-form {
+        max-width: 100%;        
+    }
+
+    #page-teacher-form main {
+        margin: 0 auto;
+        max-width: 740px;
+        padding: 3.2rem 0;
+    } 
+}   

@@ -1,0 +1,101 @@
+#page-products-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#search-products {
+    margin-top: 3.2rem;
+}
+
+#search-products label {
+    color: var(--color-text-in-primary);
+}
+
+#search-products .input-block {
+    position: relative;
+}
+
+#search-products .input-block + .input-block {
+    margin-top: 1.4rem;
+}
+
+#search-products .input-block label {
+    font-size: 1.4rem;
+}
+
+#search-products .input-block input {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+#search-products .input-block:focus-within::after {
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0;
+}
+
+#page-products-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+#page-products-list .cadastro {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.2s;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+}
+
+#page-products-list .cadastro:hover {
+    background: var(--color-secundary-dark);
+}
+
+.cadastro img {
+    width: 5rem;
+}
+
+@media (min-width: 700px) {
+    #page-products-list {
+        max-width: 100%;
+    }
+
+    #search-products {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+    #search-products .input-block + .input-block {
+        margin-top: 0;
+    }
+
+    #page-products-list main {
+        margin: 0 auto;
+        max-width: 740px;
+        padding: 3.2rem 0;
+    }    
+
+}
